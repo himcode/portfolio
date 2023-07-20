@@ -10,13 +10,16 @@
   }
 */
 body {
+    z-index: 0;
     height: 100%;
     width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
 .nav{
     height: 5vh;
+    width: 98vw;
 }
 
 #container-floating{
@@ -48,15 +51,18 @@ body {
   font-size: 18px;
   font-family: 'Roboto';
   font-weight: 300;
-}
+  z-index: 100!important;
+  }
 
 #home{
     display: flex;
     flex-direction: column;
+    height:95vh;
+    position: relative;
 }
 #hello {
     font-family: 'Tektur', cursive;;
-    height: 95vh;
+    height: 45vh;
     display: flex;
     align-self: center;
     align-items: center;
@@ -67,6 +73,51 @@ body {
 #hello h1{
     font-size: 130px;
 }
+
+/* .space {
+  width:3vw;
+} */
+
+
+
+/* ----------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #000000;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/* --------------------------------------------- */
+
+
+
+
 #intro {
     display: flex;
     flex-direction: column;
@@ -113,15 +164,24 @@ body {
 
 .card {
   text-align: center;
+  z-index: 100;
 }
 
 #experience {
-    height:95vh;
+    padding-top: 10vh;
+    /* height:95vh; */
     display: flex;
     flex-direction: column;
     align-self: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}
+
+.exp{
+  margin-left: 10vw;
+  margin-right: 10vw;
+  width: 78vw;
 }
 
 #contact {
