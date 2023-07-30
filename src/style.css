@@ -17,6 +17,8 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    /* background-color: #dfe6ea; */
+    background-image: linear-gradient(to bottom, rgb(225, 236, 227) , rgb(135, 223, 229));
 }
 .nav{
     height: 5vh;
@@ -159,7 +161,7 @@ body {
 .card-custom{
     
     box-shadow: 10px 10px 5px gray;
-    /* background-color: rgb(213, 224, 224); */
+    background-color: rgb(152, 248, 187);
 
 }
 
