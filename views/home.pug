@@ -1,3 +1,212 @@
-extends layout.pug
-append navb
-	
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IT=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM', crossorigin='anonymous')
+  title Portfolio
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js', integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz', crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js')
+  link(rel='stylesheet', href='../src/style.css')
+  script(src='https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js')
+  link(rel='preconnect', href='https://fonts.googleapis.com')
+  link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Tektur&display=swap', rel='stylesheet')
+nav#navbar.nav.nav-pills.flex-column.flex-sm-row.sticky-top
+  a.flex-sm-fill.text-sm-center.nav-link(aria-current='page', href='#home') Home
+  a.flex-sm-fill.text-sm-center.nav-link(href='#skills') Skills
+  a.flex-sm-fill.text-sm-center.nav-link(href='#experience') Experience
+  a.flex-sm-fill.text-sm-center.nav-link(href='#contact') Contact
+#container-floating
+  button.plus(type='button') Link
+#bg.wrapper
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+  div
+    span.dot
+#home
+  #hello
+    h1 Hello!
+    span.wave &#x1F44B;
+  .waviy
+    span(style='--i:1') I&apos;
+    span(style='--i:2') m
+    span(style='--i:3') &nbsp;&nbsp; 
+    span(style='--i:3') H 
+    span(style='--i:4') I
+    span(style='--i:5') M
+    span(style='--i:6') A
+    span(style='--i:7') N
+    span(style='--i:8') S
+    span(style='--i:9') H
+    span(style='--i:10') U
+#scroll1
+  .picture
+  .about
+    h1 I&apos;m Himanshu!
+    |           Hello, I&rsquo;m a full stack web developer and android app developer with a passion for creating innovative and user-friendly solutions. I have experience in developing web applications using JavaScript frameworks such as React, Angular and Vue, as well as backend technologies such as Node.js, Express and MongoDB. I also have experience in developing android applications using Java and Kotlin, as well as integrating them with Firebase and other APIs. Some of my projects include a stock management website, a social media app, a fitness tracker app and a quiz app. I&rsquo;m also proficient in Python and have used it for data analysis, web scraping and automation. In addition, I have skills in infrastructure management using tools such as AWS, Docker and Kubernetes. I&rsquo;m always eager to learn new technologies and improve my skills. You can check out some of my work below or contact me for more details.
+#skills
+  .row.row-cols-1.row-cols-md-3.g-4.row-custom
+    .col
+      .card.h-100.card-custom
+        .card-body
+          h5.card-title Languages
+          h6 C
+          h6 C++
+          h6 Python
+          h6 Java
+    .col
+      .card.h-100.card-custom
+        .card-body
+          h3.card-title Technologies
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          h6 langaguafeadfaf
+          p.card-text This card has supporting text below as a natural lead-in to additional content.
+    .col
+      .card.h-100.card-custom
+        .card-body
+          h5.card-title Tools
+          p.card-text
+            | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+#experience
+  .exp
+    h1.exp-title
+      | Accenture Solutions Private Limited
+    h4.exp-subheading
+      | Packaged App Development Analyst
+    h6.location
+      | Feb 2023 - Current | Gurugram, India
+    div
+      ul
+        li
+          | Deputy SME for the RTS and WPS Local Bundle Team for ROCHE.
+        li
+          | Maintained Customized Application Launcher for Windows Machines.
+        li
+          | Refractor and implement Applicaion Launcher using Powershell Powershell Scripts and XML.
+        li
+          | Provide strong Technical leadership and guidance to the geographically distributed RTS/DCS teams.
+  .exp
+    h1.exp-title
+      | Accenture Solutions Private Limited
+    h4.exp-subheading
+      | Application Development Associate
+    h6.location
+      | Feb 2021 - Jan 2023 | Gurugram, India
+    div
+      ul
+        li
+          | Joined Roche Holding AG Tech Support Project in April.
+        li
+          | Windows Desktop Management.
+        li
+          | Handle Operations as a cloud support associate.
+        li
+          | Lead the weekly client call for the techincal and operational issues.
+        li
+          | Worked closely with global support development, quality assurance and tool teams to deliver solutions.
+        li
+          | Worked on tools like PRTG(Monitoring), KACE(System Management), Acronis(Backup and Restore Management), Veeva docs(Document Management).
+        li
+          | Access management, Administration, Service Now
+        li
+          | Managed the tickets and guided the team towards the reduction of the backlog.
+  .exp
+    h1.exp-title
+      | HelpByTech
+    h4.exp-subheading
+      | Software Developer - I
+    h6.location
+      | Jun 2020 - Feb 2021
+    div
+      ul
+        li
+          | Created a MicroService which integrates third party services and external API&apos;s as a part of implementation of ad-fraud detection project.
+        li
+          | Optimized a RESTful API for a web application.
+        li
+          | Used MongoDB to develop API which interacts with backend databases.
+  .col
+    .container.overflow-hidden.text-center
+      .row.gy-5
+        .col-6
+          .p-3
+            .card.h-100.card-custom
+              .card-body
+                h3.card-title(padding='50px')
+                  | Memories 
+                  h5  MERN Project
+                |                   &#x2794; Full Stack MERN Social Media App with Auth, Pagination, Comments
+                br
+                |                   Node Express React Redux Auth Google Authentication
+        .col-6
+          .p-3
+            .card.h-100.card-custom
+              .card-body
+                h3.card-title(padding='50px') Sound Recorder
+                |                   An android application to record audio
+                br
+                |                   Android Studio Java SQL XML
+        .col-6
+          .p-3
+            .card.h-100.card-custom
+              .card-body
+                h3.card-title(padding='50px') Zeero Kaanta
+                |                   An android application to play Tic Tac Toe
+                br
+                |                   Android Studio Java XML
+        .col-6
+          .p-3
+            .card.h-100.card-custom
+              .card-body
+                h3.card-title(padding='50px') JARVIS/FRIDAY
+                |                   A python based assistance based on text to speech which can
+                |       perform some specific actions.
+                br
+                |       | NLP, STT, PYTHON
+  #contact
+    form#user_detail(action='/', method='post')
+      .row
+        .col
+          input.form-control(type='text', placeholder='First name', aria-label='First name', name='fname')
+        .col
+          input.form-control(type='text', placeholder='Last name', aria-label='Last name', name='lname')
+      .input-group
+        span.input-group-text Query
+        textarea.form-control(aria-label='With textarea', name='query')
+      button.btn Submit
+    |           Mail to 
+    a(href='mailto: subodhkumar321.1@gmail.com') subodhkumar321.1@gmail.com
