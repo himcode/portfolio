@@ -15,61 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-<script>
-        
-        // document.addEventListener("DOMContentLoaded", function(event) { 
-        //   var text = document.getElementById('animation');
-        
-        // var newDom = '';
-        // var animationDelay = 6;
-        // console.log(text);
-        // for(let i = 0; i < text.innerText.length; i++)
-        // {
-        //     newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-        // }
-
-        // text.innerHTML = newDom;
-        // var length = text.children.length;
-
-        // for(let i = 0; i < length; i++)
-        // {
-        //     text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-        // }
-        (function($) {
-
-
-$.fn.visible = function(partial) {
-  
-    var $t            = $(this),
-        $w            = $(window),
-        viewTop       = $w.scrollTop(),
-        viewBottom    = viewTop + $w.height(),
-        _top          = $t.offset().top,
-        _bottom       = _top + $t.height(),
-        compareTop    = partial === true ? _bottom : _top,
-        compareBottom = partial === true ? _top : _bottom;
-  
-  return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-};
-  
-})(jQuery);
-
-$(window).scroll(function(event) {
-
-$("li").each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("fadeIn"); 
-  } else {
-    el.removeClass("fadeIn");
-  }
-});
-
-});
-      // });
-    
-</script>
+<script src="../src/onscroll-effect.es6.js"></script>
     </head>
     <body data-bs-spy="scroll" data-bs-target="#navbar">
       
@@ -187,7 +133,7 @@ $("li").each(function(i, el) {
           <h1 class="title">Experience</h1>
           <div class="exp">
             <h1 class="exp-title">
-              <div id="animation">
+              <div data-scroll data-scroll-repeat="10" data-scroll-reverse="true">
               Accenture Solutions Private Limited
             </div>
             </h1>

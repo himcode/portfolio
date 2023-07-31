@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     /* background-color: #dfe6ea; */
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0) , rgb(14, 108, 113));
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) , rgb(14, 108, 113), rgba(59, 205, 59, 0.454));
 }
 .nav{
     height: 5vh;
@@ -197,7 +197,7 @@ h1.title{
 }
 
 #contact {
-    height:95vh;
+    height:100vh;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -592,14 +592,16 @@ h1.title{
 }
 /* ---------- */
 /* section{ */
-  li{
+  .is-outside{
     opacity: 0;
-    transition: ease all 1s;
-    margin-left: -15px;
-    
-    &.fadeIn{
-      opacity: 1;
-      margin-left: 0;
-    }
+    /* transition: ease-in 1s; */
+    margin-left: 20px;
   }
+  .is-inside{
+      opacity: 1;
+      margin-left: 0px;
+      transition: cubic-bezier(0.66, 0.01, 0.25, 0.94) 0.5s;
+      /* transition: opacity 1s; */
+    }
+  
 /* } */
