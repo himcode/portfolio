@@ -15,7 +15,61 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<script>
+        
+        // document.addEventListener("DOMContentLoaded", function(event) { 
+        //   var text = document.getElementById('animation');
+        
+        // var newDom = '';
+        // var animationDelay = 6;
+        // console.log(text);
+        // for(let i = 0; i < text.innerText.length; i++)
+        // {
+        //     newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        // }
 
+        // text.innerHTML = newDom;
+        // var length = text.children.length;
+
+        // for(let i = 0; i < length; i++)
+        // {
+        //     text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+        // }
+        (function($) {
+
+
+$.fn.visible = function(partial) {
+  
+    var $t            = $(this),
+        $w            = $(window),
+        viewTop       = $w.scrollTop(),
+        viewBottom    = viewTop + $w.height(),
+        _top          = $t.offset().top,
+        _bottom       = _top + $t.height(),
+        compareTop    = partial === true ? _bottom : _top,
+        compareBottom = partial === true ? _top : _bottom;
+  
+  return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+};
+  
+})(jQuery);
+
+$(window).scroll(function(event) {
+
+$("li").each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("fadeIn"); 
+  } else {
+    el.removeClass("fadeIn");
+  }
+});
+
+});
+      // });
+    
+</script>
     </head>
     <body data-bs-spy="scroll" data-bs-target="#navbar">
       
@@ -71,11 +125,13 @@
     </div>
         <div id="scroll1">
         <div class="picture">
-          <img src="/src/images/avatar.png" alt="">
+          <img src="../src/images/avatar.png" alt="">
         </div>
         <div class="about">
           <h1>Me?</h1>
+          
           Hello, I’m a full stack web developer and android app developer with a passion for creating innovative and user-friendly solutions. I have experience in developing web applications using JavaScript frameworks such as React, Angular and Vue, as well as backend technologies such as Node.js, Express and MongoDB. I also have experience in developing android applications using Java and Kotlin, as well as integrating them with Firebase and other APIs. Some of my projects include a stock management website, a social media app, a fitness tracker app and a quiz app. I’m also proficient in Python and have used it for data analysis, web scraping and automation. In addition, I have skills in infrastructure management using tools such as AWS, Docker and Kubernetes. I’m always eager to learn new technologies and improve my skills. You can check out some of my work below or contact me for more details.
+        
         </div>
         </div>
         </div>
@@ -127,10 +183,13 @@
       </div>
 <!------------------------------------------------------------------------------------------------------------------------------------------->
         <div id="experience">
+          <section>
           <h1 class="title">Experience</h1>
           <div class="exp">
             <h1 class="exp-title">
+              <div id="animation">
               Accenture Solutions Private Limited
+            </div>
             </h1>
             <h4 class="exp-subheading">
               Packaged App Development Analyst
@@ -217,6 +276,7 @@
                 </li>
               </ul> 
             </div>
+          </section>
           </div>
           <!-- --------------- Projects-->
           <div class="col">
