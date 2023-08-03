@@ -68,6 +68,7 @@ body {
 }
 #hello {
     font-family: 'Tektur', cursive;;
+    margin-top: 5vw;
     height: 45vh;
     display: flex;
     align-self: center;
@@ -149,8 +150,8 @@ body {
 }
 
 .picture {
-    /* background-image: url('/src/images/avatar.png'); */
-    width:40vw;
+    background-image: url('images/avatar.png');
+    /* width:40%; */
 }
 
 #skills {
@@ -186,7 +187,7 @@ body {
 }
 
 .exp{
-  margin-left: 10vw;
+  /* margin-left: vw; */
   margin-right: 10vw;
   width: 78vw;
 }
@@ -593,13 +594,14 @@ h1.title{
 /* ---------- */
 /* section{ */
   .is-outside{
-    opacity: 0;
-    /* transition: ease-in 1s; */
-    margin-left: 20px;
+    opacity: 1;
+    transition: ease-in 1s;
+    margin-left: 10vw;
   }
   .is-inside{
       opacity: 1;
-      margin-left: 0px;
+      transition: opacity 1s;
+      margin-left: 50px;
       transition: cubic-bezier(0.66, 0.01, 0.25, 0.94) 0.5s;
       /* transition: opacity 1s; */
     }
