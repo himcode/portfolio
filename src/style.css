@@ -200,6 +200,7 @@ body {
 
 #experience {
     padding-top: 10vh;
+    margin-top: 1vh;
     /* height:95vh; */
     display: flex;
     flex-direction: column;
