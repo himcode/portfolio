@@ -1,8 +1,8 @@
 {
     "version": "2.0.0",
-    "command": "explorer",    
+    "command": "chrome",    
     "windows": {
-        "command": "explorer.exe"
+        "command": "chrome.exe"
     },
     "args": ["index.html"]
 }
