@@ -19,7 +19,7 @@ const port = 80;
 
 // EXPRESS SPECIFIC STUFF
 app.use('/src', express.static('src')) // For serving static files
-app.use(express.urlencoded())
+// app.use(express.urlencoded())
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug') // Set the template engine as pug
